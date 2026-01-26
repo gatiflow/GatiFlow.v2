@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatiFlow | Compliant Data Intelligence API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --card-hover: #1c2128;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --success: #3fb950;
+            --warning: #d29922;
+            --border: #30363d;
+            --gradient: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        /* Compliance Badge Fixed */
+        .compliance-badge-fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(35, 134, 54, 0.15);
+            border: 2px solid var(--success);
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 0.75em;
+            font-weight: 600;
+            color: var(--success);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .compliance-badge-fixed::before {
+            content: "✓";
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 0 80px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+        
+        .hero .tagline {
+            font-size: 1.3em;
+            color: var(--text);
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .hero .subtitle {
+            font-size: 1em;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.2s;
+            display: inline-block;
+            border: 1px solid;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: #0d1117;
+            border-color: var(--accent);
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(88, 166, 255, 0.1);
+        }
+        
+        /* Trust Indicators */
+        .trust-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            padding: 30px;
+            background: var(--card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-item .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .trust-item h3 {
+            font-size: 0.9em;
+            color: var(--success);
+            margin-bottom: 5px;
+        }
+        
+        .trust-item p {
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+        
+        /* Section */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        section h2 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        
+        section .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1em;
+        }
+        
+        /* How It Works */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 30px;
+            background: var(--card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .step:hover {
+            border-color: var(--accent);
+            background: var(--card-hover);
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #0d1117;
+        }
+        
+        .step h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        
+        .step p {
+            color: var(--text-muted);
+            font-size: 0.95em;
+        }
+        
+        /* Dashboard Demo */
+        .dashboard-demo {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 40px;
+            border: 1px solid var(--border);
+            margin-top: 50px;
+        }
+        
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .dashboard-header h3 {
+            font-size: 1.4em;
+            color: var(--text);
+        }
+        
+        .data-source-badge {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            background: rgba(88, 166, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 350px;
+            margin: 30px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-card {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--success);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+        
+        /* Use Cases */
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .use-case {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .use-case:hover {
+            border-color: var(--accent);
+            background: var(--card-hover);
+        }
+        
+        .use-case-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .use-case h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        
+        .use-case p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+        
+        .use-case ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .use-case li {
+            padding: 8px 0;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+        
+        .use-case li::before {
+            content: "✓ ";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Compliance Section */
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .compliance-card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid var(--success);
+        }
+        
+        .compliance-card h3 {
+            color: var(--success);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .compliance-card h3::before {
+            content: "🔒";
+            font-size: 1.5em;
+        }
+        
+        .compliance-card p {
+            color: var(--text-muted);
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+        
+        .compliance-card ul {
+            margin-top: 15px;
+            list-style: none;
+        }
+        
+        .compliance-card li {
+            padding: 6px 0;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+        
+        .compliance-card li::before {
+            content: "• ";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: var(--card);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--accent);
+            border-width: 2px;
+        }
+        
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #0d1117;
+            padding: 4px 16px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        
+        .pricing-card .price {
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--accent);
+            margin: 20px 0;
+        }
+        
+        .pricing-card .price span {
+            font-size: 0.4em;
+            color: var(--text-muted);
+        }
+        
+        .pricing-card .description {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            color: var(--text-muted);
+            font-size: 0.9em;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features li::before {
+            content: "✓ ";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            text-align: center;
+            background: var(--card);
+            border-top: 1px solid var(--border);
+            margin-top: 80px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1em;
+            }
+            
+            .compliance-badge-fixed {
+                position: static;
+                margin: 20px auto;
+                width: fit-content;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .chart-container {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Compliance Badge -->
+    <div class="compliance-badge-fixed">GDPR/LGPD COMPLIANT</div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="logo-gatiflow.png" alt="GatiFlow Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Data Intelligence API<br>Built on Ethics</h1>
+            <p class="tagline">Transform public web flows into verified, compliant business intelligence</p>
+            <p class="subtitle">Enterprise-grade data pipelines with built-in GDPR/LGPD compliance. No personal information, only strategic market insights from public sources.</p>
+            
+            <div class="cta-group">
+                <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                <a href="compliance.html" class="btn btn-secondary">View Ethics Protocol</a>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <div class="icon">🔓</div>
+                    <h3>100% Public Data</h3>
+                    <p>Only publicly available sources</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Privacy-First</h3>
+                    <p>Zero personal information</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">✓</div>
+                    <h3>Audit-Ready</h3>
+                    <p>Complete source transparency</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">⚖️</div>
+                    <h3>Compliant by Design</h3>
+                    <p>GDPR & LGPD certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How GatiFlow Works</h2>
+            <p class="section-subtitle">Ethical data intelligence in four transparent steps</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Public Sources Only</h3>
+                    <p>We exclusively monitor publicly accessible data from verified sources like GitHub, StackOverflow, and official job boards. No private databases, no personal accounts.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Automated Compliance</h3>
+                    <p>Every data point passes through our compliance engine that verifies licensing, respects robots.txt, and implements rate limiting to protect source servers.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Structure & Verify</h3>
+                    <p>Raw data is cleaned, structured, and cross-referenced. We add metadata about source, timestamp, and verification status for complete auditability.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Secure API Delivery</h3>
+                    <p>Access intelligence through our RESTful API with authentication, rate limits, and usage monitoring. Enterprise SLAs available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Dashboard Demo -->
+    <section id="demo">
+        <div class="container">
+            <h2>Live Market Intelligence</h2>
+            <p class="section-subtitle">Real-time data from public tech communities</p>
+            
+            <div class="dashboard-demo">
+                <div class="dashboard-header">
+                    <h3>Tech Skills Demand Trends</h3>
+                    <span class="data-source-badge">Sources: GitHub Jobs, StackOverflow, LinkedIn Public Posts</span>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="demandChart"></canvas>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">+42%</div>
+                        <div class="stat-label">Python/AI Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">+28%</div>
+                        <div class="stat-label">Data Engineering</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">+15%</div>
+                        <div class="stat-label">Cloud/AWS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Compliance Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases">
+        <div class="container">
+            <h2>Ethical Use Cases</h2>
+            <p class="section-subtitle">Strategic intelligence without compromising privacy</p>
+            
+            <div class="use-cases">
+                <div class="use-case">
+                    <div class="use-case-icon">📊</div>
+                    <h3>Market Intelligence</h3>
+                    <p>Track emerging technologies, skill demands, and industry trends from public developer communities.</p>
+                    <ul>
+                        <li>Monitor tech stack adoption rates</li>
+                        <li>Identify emerging frameworks</li>
+                        <li>Benchmark salary ranges</li>
+                        <li>Track skill gap trends</li>
+                    </ul>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">🎯</div>
+                    <h3>Competitive Analysis</h3>
+                    <p>Understand market positioning through public company data, job postings, and tech blog activity.</p>
+                    <ul>
+                        <li>Public job posting analysis</li>
+                        <li>Tech stack insights</li>
+                        <li>Growth indicators</li>
+                        <li>Market positioning</li>
+                    </ul>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-icon">🔍</div>
+                    <h3>Talent Insights</h3>
+                    <p>Aggregate public job market data to understand hiring trends, skill requirements, and compensation benchmarks.</p>
+                    <ul>
+                        <li>Skill demand forecasting</li>
+                        <li>Compensation benchmarks</li>
+                        <li>Location-based trends</li>
+                        <li>Public certification data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section id="compliance">
+        <div class="container">
+            <h2>Compliance & Ethics First</h2>
+            <p class="section-subtitle">Transparency and ethics aren't features—they're our foundation</p>
+            
+            <div class="compliance-grid">
+                <div class="compliance-card">
+                    <h3>Data Sources</h3>
+                    <p>We exclusively use:</p>
+                    <ul>
+                        <li>GitHub public repositories & APIs</li>
+                        <li>StackOverflow public questions/tags</li>
+                        <li>Official company job boards</li>
+                        <li>Public tech blogs & RSS feeds</li>
+                        <li>Open government datasets</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>We never access:</strong> Private profiles, email addresses, personal messages, or paywalled content.</p>
+                </div>
+                
+                <div class="compliance-card">
+                    <h3>Legal Compliance</h3>
+                    <p>Full adherence to:</p>
+                    <ul>
+                        <li>GDPR (EU data protection)</li>
+                        <li>LGPD (Brazilian data law)</li>
+                        <li>CCPA (California privacy)</li>
+                        <li>Robots.txt protocols</li>
+                        <li>Terms of Service agreements</li>
+                    </ul>
+                    <p style="margin-top: 15px;">Regular third-party audits and compliance certifications available on request.</p>
+                </div>
+                
+                <div class="compliance-card">
+                    <h3>Ethical Principles</h3>
+                    <p>Our commitments:</p>
+                    <ul>
+                        <li>Rate limiting to protect sources</li>
+                        <li>Attribution of all data sources</li>
+                        <li>Data minimization practices</li>
+                        <li>Opt-out mechanisms honored</li>
+                        <li>No AI training on collected data</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><a href="compliance.html" style="color: var(--accent);">Read our full Ethics Protocol →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your compliance needs</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0<span>/month</span></div>
+                    <p class="description">Perfect for research and evaluation</p>
+                    <ul class="pricing-features">
+                        <li>1,000 API calls/month</li>
+                        <li>Public data access</li>
+                        <li>Basic compliance docs</li>
+                        <li>Community support</li>
+                        <li>7-day data history</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 20px; display: block; text-align: center;">Start Free</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">MOST POPULAR</span>
+                    <h3>Professional</h3>
+                    <div class="price">$299<span>/month</span></div>
+                    <p class="description">For teams requiring verified intelligence</p>
+                    <ul class="pricing-features">
+                        <li>50,000 API calls/month</li>
+                        <li>Priority data updates</li>
+                        <li>Full compliance reporting</li>
+                        <li>Email support (24h SLA)</li>
+                        <li>90-day data history</li>
+                        <li>Custom rate limits</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" style="width: 100%; margin-top: 20px; display: block; text-align: center;">Start Trial</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <p class="description">Tailored compliance for large organizations</p>
+                    <ul class="pricing-features">
+                        <li>Unlimited API calls</li>
+                        <li>Dedicated compliance team</li>
+                        <li>Custom data sources</li>
+                        <li>99.9% SLA guarantee</li>
+                        <li>Unlimited history</li>
+                        <li>On-premise deployment option</li>
+                        <li>Legal team consultations</li>
+                    </ul>
+                    <a href="mailto:gatiflow@proton.me" class="btn btn-secondary" style="width: 100%; margin-top: 20px; display: block; text-align: center;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="compliance.html">Ethics Protocol</a>
+                <a href="gatiflow_api.json">API Documentation</a>
+                <a href="mailto:gatiflow@proton.me">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            
+            <p><strong>Professional Contact:</strong> <a href="mailto:gatiflow@proton.me">gatiflow@proton.me</a></p>
+            <p>Based in Brazil • Serving Clients Worldwide</p>
+            <p style="margin-top: 20px; font-size: 0.85em;">© 2026 GatiFlow Intelligence Systems | Committed to Ethical Data Sourcing</p>
+            <p style="font-size: 0.8em; color: #6e7681; margin-top: 10px;">All data sourced from public, legally accessible sources with full compliance verification.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js Demo - Tech Skills Demand
+        const ctx = document.getElementById('demandChart').getContext('2d');
+        const demandChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [
+                    {
+                        label: 'Python/AI',
+                        data: [65, 72, 78, 85, 89, 92],
+                        borderColor: '#3fb950',
+                        backgroundColor: 'rgba(63, 185, 80, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    },
+                    {
+                        label: 'Data Engineering
