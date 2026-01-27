@@ -3,368 +3,128 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-27T18:00:00Z",
+    "last_updated": "2026-01-27T23:54:18.978305+00:00",
     "provider": "GatiFlow Intelligence Systems",
-    "base_url": "https://api.gatiflow.com/v2",
-    "documentation": "https://gatiflow.github.io/GatiFlow.v2/api-docs.html",
     "compliance": {
       "gdpr_compliant": true,
       "lgpd_compliant": true,
       "ccpa_compliant": true,
       "data_sources": "Public only",
-      "pii_collected": false,
-      "ethics_protocol": "https://gatiflow.github.io/GatiFlow.v2/compliance.html"
-    },
-    "rate_limits": {
-      "free_tier": "1000 requests/month",
-      "professional": "50000 requests/month",
-      "enterprise": "unlimited",
-      "burst_limit": "10 requests/second"
+      "pii_collected": false
     }
   },
-  "endpoints": [
-    {
-      "path": "/market/trends",
-      "method": "GET",
-      "description": "Get latest tech industry trends from public sources",
-      "auth_required": true,
-      "response_format": "JSON"
-    },
-    {
-      "path": "/skills/demand",
-      "method": "GET",
-      "description": "Retrieve skill demand analytics and growth metrics",
-      "auth_required": true,
-      "response_format": "JSON"
-    },
-    {
-      "path": "/jobs/market",
-      "method": "GET",
-      "description": "Access aggregated job market data from public boards",
-      "auth_required": true,
-      "response_format": "JSON"
-    },
-    {
-      "path": "/talent/insights",
-      "method": "GET",
-      "description": "Get public talent market insights and benchmarks",
-      "auth_required": true,
-      "response_format": "JSON"
-    }
-  ],
   "data": {
-    "skills_demand": {
-      "timestamp": "2026-01-27T18:00:00Z",
-      "source_count": 15420,
-      "sources": ["GitHub Jobs API", "StackOverflow Developer Survey", "LinkedIn Public Posts", "Indeed Job Postings"],
-      "data_freshness": "last_7_days",
-      "metrics": [
-        {
-          "skill": "Python",
-          "category": "Programming Language",
-          "demand_score": 92,
-          "growth_rate": "+42%",
-          "job_postings": 8450,
-          "avg_salary_usd": 125000,
-          "trending": true,
-          "related_technologies": ["Django", "FastAPI", "Pandas", "TensorFlow"],
-          "top_locations": ["San Francisco", "New York", "London", "Berlin", "São Paulo"]
-        },
-        {
-          "skill": "Artificial Intelligence",
-          "category": "Technology Domain",
-          "demand_score": 95,
-          "growth_rate": "+48%",
-          "job_postings": 6230,
-          "avg_salary_usd": 145000,
-          "trending": true,
-          "related_technologies": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision"],
-          "top_locations": ["San Francisco", "Boston", "Seattle", "Austin", "Singapore"]
-        },
-        {
-          "skill": "Data Engineering",
-          "category": "Job Role",
-          "demand_score": 85,
-          "growth_rate": "+28%",
-          "job_postings": 5120,
-          "avg_salary_usd": 135000,
-          "trending": true,
-          "related_technologies": ["Apache Spark", "Airflow", "Kafka", "dbt", "Snowflake"],
-          "top_locations": ["San Francisco", "New York", "Amsterdam", "Toronto", "Dublin"]
-        },
-        {
-          "skill": "AWS",
-          "category": "Cloud Platform",
-          "demand_score": 78,
-          "growth_rate": "+15%",
-          "job_postings": 7890,
-          "avg_salary_usd": 120000,
-          "trending": false,
-          "related_technologies": ["EC2", "S3", "Lambda", "RDS", "EKS"],
-          "top_locations": ["Seattle", "San Francisco", "New York", "London", "Sydney"]
-        },
-        {
-          "skill": "Kubernetes",
-          "category": "DevOps Tool",
-          "demand_score": 72,
-          "growth_rate": "+22%",
-          "job_postings": 4560,
-          "avg_salary_usd": 130000,
-          "trending": true,
-          "related_technologies": ["Docker", "Helm", "Terraform", "Jenkins", "ArgoCD"],
-          "top_locations": ["San Francisco", "Berlin", "Amsterdam", "Austin", "Tel Aviv"]
-        },
-        {
-          "skill": "React",
-          "category": "Frontend Framework",
-          "demand_score": 80,
-          "growth_rate": "+18%",
-          "job_postings": 6340,
-          "avg_salary_usd": 110000,
-          "trending": false,
-          "related_technologies": ["Next.js", "TypeScript", "Redux", "React Native"],
-          "top_locations": ["San Francisco", "New York", "London", "Berlin", "Remote"]
-        }
-      ],
-      "historical_data": {
-        "jan_2026": {"python": 92, "ai": 95, "data_eng": 85, "aws": 78, "k8s": 72, "react": 80},
-        "dec_2025": {"python": 89, "ai": 92, "data_eng": 83, "aws": 77, "k8s": 70, "react": 79},
-        "nov_2025": {"python": 85, "ai": 89, "data_eng": 80, "aws": 76, "k8s": 68, "react": 78},
-        "oct_2025": {"python": 82, "ai": 85, "data_eng": 78, "aws": 75, "k8s": 66, "react": 77},
-        "sep_2025": {"python": 78, "ai": 81, "data_eng": 75, "aws": 74, "k8s": 64, "react": 76},
-        "aug_2025": {"python": 72, "ai": 76, "data_eng": 72, "aws": 73, "k8s": 62, "react": 75}
-      }
-    },
-    "market_trends": {
-      "timestamp": "2026-01-27T18:00:00Z",
-      "source": "Aggregated from HackerNews, GitHub Trending, Dev.to, TechCrunch",
-      "total_articles_analyzed": 2340,
-      "trending_topics": [
-        {
-          "title": "Rust Adoption Accelerates in Production Systems",
-          "category": "Programming Languages",
-          "mentions": 340,
-          "sentiment": "positive",
-          "growth_trend": "+35%",
-          "key_insight": "Major tech companies migrating critical infrastructure to Rust for memory safety and performance",
-          "sources": ["HackerNews", "GitHub Blog", "InfoQ"],
-          "relevance_score": 94
-        },
-        {
-          "title": "Vector Databases Emerge as AI Infrastructure Standard",
-          "category": "Databases & Infrastructure",
-          "mentions": 280,
-          "sentiment": "positive",
-          "growth_trend": "+52%",
-          "key_insight": "Pinecone, Weaviate, and Milvus seeing massive adoption for RAG applications",
-          "sources": ["TechCrunch", "The New Stack", "Medium"],
-          "relevance_score": 91
-        },
-        {
-          "title": "Small Language Models Challenge GPT-4 Dominance",
-          "category": "Artificial Intelligence",
-          "mentions": 450,
-          "sentiment": "neutral",
-          "growth_trend": "+28%",
-          "key_insight": "Mistral 7B and Llama 2 providing competitive results at fraction of cost",
-          "sources": ["ArXiv", "HuggingFace Blog", "Reddit r/MachineLearning"],
-          "relevance_score": 88
-        },
-        {
-          "title": "WebAssembly Expanding Beyond Browser Use Cases",
-          "category": "Web Technologies",
-          "mentions": 195,
-          "sentiment": "positive",
-          "growth_trend": "+41%",
-          "key_insight": "WASM becoming popular for serverless edge computing and microservices",
-          "sources": ["WebAssembly Weekly", "Dev.to", "GitHub Trending"],
-          "relevance_score": 82
-        },
-        {
-          "title": "Platform Engineering Replaces Traditional DevOps",
-          "category": "Software Engineering",
-          "mentions": 310,
-          "sentiment": "positive",
-          "growth_trend": "+38%",
-          "key_insight": "Companies building internal developer platforms to improve productivity",
-          "sources": ["InfoQ", "The New Stack", "LinkedIn Engineering"],
-          "relevance_score": 86
-        },
-        {
-          "title": "Compliance-First Data Architecture Gains Traction",
-          "category": "Data Governance",
-          "mentions": 165,
-          "sentiment": "positive",
-          "growth_trend": "+25%",
-          "key_insight": "GDPR/LGPD driving shift to privacy-by-design in data systems",
-          "sources": ["DataCouncil", "IAPP Blog", "Medium Data Engineering"],
-          "relevance_score": 79
-        }
-      ]
-    },
-    "job_market": {
-      "timestamp": "2026-01-27T18:00:00Z",
-      "total_jobs_analyzed": 45230,
-      "sources": ["LinkedIn Jobs API", "Indeed", "Glassdoor", "AngelList", "RemoteOK"],
-      "market_summary": {
-        "total_tech_openings": 45230,
-        "remote_percentage": 42,
-        "avg_time_to_fill_days": 45,
-        "competitive_roles": ["AI/ML Engineer", "Data Engineer", "Platform Engineer", "Security Engineer"]
+    "market_trends": [
+      {
+        "title": "AI2: Open Coding Agents",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://allenai.org/blog/open-coding-agents",
+        "published": "Tue, 27 Jan 2026 17:17:54 +0000"
       },
-      "top_positions": [
-        {
-          "title": "Senior Machine Learning Engineer",
-          "demand_rank": 1,
-          "job_count": 3420,
-          "avg_salary_usd": 165000,
-          "salary_range": "$140k - $220k",
-          "experience_required": "5-8 years",
-          "top_skills": ["Python", "TensorFlow", "PyTorch", "MLOps", "AWS"],
-          "remote_available": true,
-          "growth_rate": "+45%"
-        },
-        {
-          "title": "Staff Data Engineer",
-          "demand_rank": 2,
-          "job_count": 2890,
-          "avg_salary_usd": 155000,
-          "salary_range": "$130k - $190k",
-          "experience_required": "6-10 years",
-          "top_skills": ["Python", "Spark", "Airflow", "SQL", "Kafka"],
-          "remote_available": true,
-          "growth_rate": "+32%"
-        },
-        {
-          "title": "Platform Engineer",
-          "demand_rank": 3,
-          "job_count": 2340,
-          "avg_salary_usd": 150000,
-          "salary_range": "$125k - $180k",
-          "experience_required": "5-8 years",
-          "top_skills": ["Kubernetes", "Terraform", "Go", "Python", "AWS"],
-          "remote_available": true,
-          "growth_rate": "+38%"
-        },
-        {
-          "title": "Full Stack Engineer (AI Focus)",
-          "demand_rank": 4,
-          "job_count": 2150,
-          "avg_salary_usd": 140000,
-          "salary_range": "$115k - $170k",
-          "experience_required": "4-7 years",
-          "top_skills": ["React", "Python", "TypeScript", "Node.js", "OpenAI API"],
-          "remote_available": true,
-          "growth_rate": "+28%"
-        },
-        {
-          "title": "Security Engineer",
-          "demand_rank": 5,
-          "job_count": 1980,
-          "avg_salary_usd": 145000,
-          "salary_range": "$120k - $175k",
-          "experience_required": "5-8 years",
-          "top_skills": ["Cloud Security", "Penetration Testing", "Python", "AWS", "Kubernetes"],
-          "remote_available": false,
-          "growth_rate": "+22%"
-        },
-        {
-          "title": "DevOps Engineer",
-          "demand_rank": 6,
-          "job_count": 1850,
-          "avg_salary_usd": 130000,
-          "salary_range": "$110k - $160k",
-          "experience_required": "4-6 years",
-          "top_skills": ["CI/CD", "Docker", "Kubernetes", "Terraform", "Jenkins"],
-          "remote_available": true,
-          "growth_rate": "+15%"
-        }
-      ],
-      "salary_benchmarks": {
-        "by_experience": {
-          "junior_0_2_years": 85000,
-          "mid_3_5_years": 120000,
-          "senior_6_8_years": 155000,
-          "staff_9plus_years": 185000
-        },
-        "by_location": {
-          "san_francisco": 175000,
-          "new_york": 160000,
-          "seattle": 155000,
-          "austin": 135000,
-          "remote_us": 140000,
-          "london": 95000,
-          "berlin": 85000,
-          "sao_paulo": 45000
-        },
-        "by_role": {
-          "ml_engineer": 165000,
-          "data_engineer": 155000,
-          "platform_engineer": 150000,
-          "backend_engineer": 140000,
-          "frontend_engineer": 130000,
-          "devops_engineer": 130000
-        }
+      {
+        "title": "SoundCloud Data Breach Now on HaveIBeenPwned",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://haveibeenpwned.com/Breach/SoundCloud",
+        "published": "Tue, 27 Jan 2026 17:11:39 +0000"
+      },
+      {
+        "title": "Management as AI superpower: Thriving in a world of agentic AI",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
+        "published": "Tue, 27 Jan 2026 17:04:22 +0000"
+      },
+      {
+        "title": "OpenSSL: Stack buffer overflow in CMS AuthEnvelopedData parsing",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://openssl-library.org/news/vulnerabilities/#CVE-2025-15467",
+        "published": "Tue, 27 Jan 2026 16:56:23 +0000"
       }
-    },
-    "talent_insights": {
-      "timestamp": "2026-01-27T18:00:00Z",
-      "source": "Public GitHub profiles, StackOverflow Developer Survey, LinkedIn Public Data",
-      "profiles_analyzed": 125000,
-      "emerging_skills": [
-        {
-          "skill": "LangChain",
-          "category": "AI Framework",
-          "adoption_growth": "+180%",
-          "developer_count": 12500,
-          "avg_experience_years": 2,
-          "job_market_demand": "High"
-        },
-        {
-          "skill": "Terraform",
-          "category": "IaC Tool",
-          "adoption_growth": "+45%",
-          "developer_count": 45000,
-          "avg_experience_years": 3,
-          "job_market_demand": "Very High"
-        },
-        {
-          "skill": "dbt",
-          "category": "Data Tool",
-          "adoption_growth": "+68%",
-          "developer_count": 18000,
-          "avg_experience_years": 2,
-          "job_market_demand": "High"
-        }
-      ],
-      "skill_combinations": [
-        {
-          "combination": ["Python", "AWS", "Docker"],
-          "prevalence": "32%",
-          "avg_salary": 145000,
-          "demand_score": 89
-        },
-        {
-          "combination": ["React", "TypeScript", "Node.js"],
-          "prevalence": "28%",
-          "avg_salary": 125000,
-          "demand_score": 82
-        },
-        {
-          "combination": ["Python", "Machine Learning", "TensorFlow"],
-          "prevalence": "18%",
-          "avg_salary": 165000,
-          "demand_score": 94
-        }
-      ]
-    }
+    ],
+    "top_candidates": [
+      {
+        "name": "Curso em Vídeo",
+        "role": "Software Developer",
+        "score": 99,
+        "link": "https://github.com/cursoemvideo"
+      },
+      {
+        "name": "Fernanda Kipper",
+        "role": "Active Open Source Contributor",
+        "score": 99,
+        "link": "https://github.com/Fernanda-Kipper"
+      },
+      {
+        "name": "Rafael Carneiro",
+        "role": "Active Open Source Contributor",
+        "score": 99,
+        "link": "https://github.com/Rafaelmdcarneiro"
+      },
+      {
+        "name": "Avelino",
+        "role": "Active Open Source Contributor",
+        "score": 99,
+        "link": "https://github.com/avelino"
+      },
+      {
+        "name": "Eduardo Mendes",
+        "role": "Active Open Source Contributor",
+        "score": 99,
+        "link": "https://github.com/dunossauro"
+      },
+      {
+        "name": "cypherm0nk",
+        "role": "Software Developer",
+        "score": 99,
+        "link": "https://github.com/cypherm0nk"
+      }
+    ],
+    "market_jobs": [
+      {
+        "title": "Senior Machine Learning Engineer",
+        "company": "Tech Innovators Inc",
+        "salary": "$150k - $200k",
+        "location": "Remote / San Francisco"
+      },
+      {
+        "title": "Staff Data Engineer",
+        "company": "Cloud Data Systems",
+        "salary": "$140k - $180k",
+        "location": "Remote / New York"
+      },
+      {
+        "title": "Platform Engineer",
+        "company": "DevOps Solutions",
+        "salary": "$130k - $170k",
+        "location": "Remote / Austin"
+      },
+      {
+        "title": "AI Solutions Architect",
+        "company": "GatiFlow Intelligence",
+        "salary": "Performance Based",
+        "location": "Remote Worldwide"
+      },
+      {
+        "title": "Full Stack Engineer (AI Focus)",
+        "company": "Startup Unicorn",
+        "salary": "$120k - $160k",
+        "location": "Remote / London"
+      },
+      {
+        "title": "Security Engineer",
+        "company": "FinTech Leaders",
+        "salary": "$135k - $175k",
+        "location": "Hybrid / Seattle"
+      }
+    ]
   },
   "metadata": {
     "collection_date": "2026-01-27",
-    "collection_time_utc": "18:00:00",
-    "data_points": 188990,
-    "processing_time_ms": 1250,
-    "cache_ttl_seconds": 3600,
-    "next_update": "2026-01-28T18:00:00Z"
+    "collection_time_utc": "23:54:24",
+    "total_data_points": 16,
+    "next_update": "Automated via GitHub Actions"
   }
 }
