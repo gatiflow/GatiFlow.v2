@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics & Compliance Protocol | GatiFlow</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --card-hover: #1c2128;
+            --accent: #58a6ff;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --success: #3fb950;
+            --warning: #d29922;
+            --border: #30363d;
+            --gradient: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        /* Header */
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+        
+        .back-link:hover {
+            background: rgba(88, 166, 255, 0.1);
+            border-color: var(--accent);
+        }
+        
+        .back-link::before {
+            content: "←";
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+        
+        .header-badge {
+            display: inline-block;
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--success);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            border: 1px solid var(--success);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .intro {
+            font-size: 1.15em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        
+        .last-updated {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+        
+        .toc h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .toc ol {
+            margin-left: 20px;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+        }
+        
+        .toc a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .toc a:hover {
+            color: var(--accent);
+        }
+        
+        /* Sections */
+        section {
+            margin: 60px 0;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #f0f6fc;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        p {
+            margin: 15px 0;
+            color: var(--text-muted);
+        }
+        
+        /* Compliance Box */
+        .compliance-box {
+            background: var(--card);
+            border-left: 4px solid var(--success);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .compliance-box h3 {
+            margin-top: 0;
+            color: var(--success);
+        }
+        
+        .compliance-box ul {
+            margin: 15px 0 15px 25px;
+        }
+        
+        .compliance-box li {
+            margin: 10px 0;
+            color: var(--text-muted);
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background: rgba(210, 153, 34, 0.1);
+            border-left: 4px solid var(--warning);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .warning-box strong {
+            color: var(--warning);
+        }
+        
+        /* Info Box */
+        .info-box {
+            background: rgba(88, 166, 255, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+            color: var(--text-muted);
+        }
+        
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        th {
+            background: #1f242c;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: var(--card);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        .contact-section p {
+            margin: 15px 0;
+        }
+        
+        .contact-section a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.6em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">Back to Home</a>
+            <div class="header-badge">✓ Verified Compliance Protocol</div>
+            <h1>Ethics & Compliance Protocol</h1>
+            <p class="intro">GatiFlow's commitment to ethical data intelligence, legal compliance, and transparent operations.</p>
+            <p class="last-updated">Last Updated: January 2026 | Version 2.0</p>
+        </header>
+
+        <!-- Table of Contents -->
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#overview">Overview & Mission</a></li>
+                <li><a href="#data-sources">Data Sources & Collection</a></li>
+                <li><a href="#legal-compliance">Legal Compliance Framework</a></li>
+                <li><a href="#ethical-principles">Ethical Principles</a></li>
+                <li><a href="#technical-safeguards">Technical Safeguards</a></li>
+                <li><a href="#prohibited-practices">Prohibited Practices</a></li>
+                <li><a href="#audit-transparency">Audit & Transparency</a></li>
+                <li><a href="#contact">Contact & Reporting</a></li>
+            </ol>
+        </nav>
+
+        <!-- Section 1: Overview -->
+        <section id="overview">
+            <h2>1. Overview & Mission</h2>
+            <p>At GatiFlow, we believe that data intelligence should never come at the expense of privacy, ethics, or legal compliance. Our mission is to provide enterprise-grade data insights while maintaining the highest standards of ethical data sourcing.</p>
+            
+            <div class="info-box">
+                <strong>Core Commitment:</strong> We source data exclusively from public sources, respect all applicable laws and regulations, and operate with complete transparency about our methods and sources.
+            </div>
+
+            <p><strong>What makes us different:</strong></p>
+            <ul>
+                <li>Compliance-first architecture designed from the ground up</li>
+                <li>No personal identifiable information (PII) collection</li>
+                <li>Complete source attribution and auditability</li>
+                <li>Regular third-party audits and certifications</li>
+                <li>Proactive monitoring of regulatory changes</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Data Sources -->
+        <section id="data-sources">
+            <h2>2. Data Sources & Collection</h2>
+            
+            <h3>2.1 Approved Public Sources</h3>
+            <div class="compliance-box">
+                <h3>Sources We Use</h3>
+                <ul>
+                    <li><strong>GitHub:</strong> Public repositories, API documentation, contribution statistics (via official API)</li>
+                    <li><strong>StackOverflow:</strong> Public questions, tags, technology trends (via official API)</li>
+                    <li><strong>Official Job Boards:</strong> LinkedIn public job postings, company career pages, Indeed listings</li>
+                    <li><strong>Tech Blogs & RSS Feeds:</strong> Public tech blogs, company engineering blogs, industry publications</li>
+                    <li><strong>Government Open Data:</strong> Official statistics, public registries, open government initiatives</li>
+                    <li><strong>Academic Publications:</strong> Research papers, conference proceedings, open-access journals</li>
+                </ul>
+            </div>
+
+            <h3>2.2 What We Never Access</h3>
+            <div class="warning-box">
+                <strong>Strictly Prohibited:</strong>
+                <ul>
+                    <li>Private user profiles or accounts</li>
+                    <li>Email addresses or contact information</li>
+                    <li>Personal messages or communications</li>
+                    <li>Paywalled or subscription-only content</li>
+                    <li>Data behind authentication or login walls</li>
+                    <li>Social media private posts</li>
+                    <li>Any source marked as "do not scrape" in robots.txt</li>
+                </ul>
+            </div>
+
+            <h3>2.3 Collection Methodology</h3>
+            <p>All data collection follows these principles:</p>
+            <ul>
+                <li><strong>API-First:</strong> We prioritize official APIs over web scraping whenever available</li>
+                <li><strong>Rate Limiting:</strong> All requests respect source server capacity (max 1 request/second per domain)</li>
+                <li><strong>robots.txt Compliance:</strong> Automated verification of robots.txt before any collection</li>
+                <li><strong>User-Agent Declaration:</strong> All requests identify as GatiFlow with contact information</li>
+                <li><strong>Scheduled Collection:</strong> Data gathered during off-peak hours to minimize server impact</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Legal Compliance -->
+        <section id="legal-compliance">
+            <h2>3. Legal Compliance Framework</h2>
+
+            <h3>3.1 GDPR Compliance (European Union)</h3>
+            <div class="compliance-box">
+                <h3>General Data Protection Regulation</h3>
+                <ul>
+                    <li><strong>Legal Basis:</strong> Legitimate interest for publicly available data (Article 6(1)(f))</li>
+                    <li><strong>Data Minimization:</strong> We collect only what's necessary for stated purposes (Article 5(1)(c))</li>
+                    <li><strong>Purpose Limitation:</strong> Data used only for business intelligence, not profiling (Article 5(1)(b))</li>
+                    <li><strong>Storage Limitation:</strong> Data retained only as long as necessary (Article 5(1)(e))</li>
+                    <li><strong>Right to Object:</strong> Individuals can request data removal (Article 21)</li>
+                    <li><strong>Data Protection Officer:</strong> Appointed DPO available for queries</li>
+                </ul>
+            </div>
+
+            <h3>3.2 LGPD Compliance (Brazil)</h3>
+            <div class="compliance-box">
+                <h3>Lei Geral de Proteção de Dados</h3>
+                <ul>
+                    <li><strong>Legal Foundation:</strong> Public information processing (Article 7, VI)</li>
+                    <li><strong>Transparency:</strong> Clear communication of processing activities (Article 9)</li>
+                    <li><strong>Data Subject Rights:</strong> Access, correction, and deletion rights honored (Article 18)</li>
+                    <li><strong>Security Measures:</strong> Technical safeguards as required (Article 46)</li>
+                    <li><strong>International Transfers:</strong> Adequate protection mechanisms in place (Article 33)</li>
+                </ul>
+            </div>
+
+            <h3>3.3 CCPA Compliance (California)</h3>
+            <div class="compliance-box">
+                <h3>California Consumer Privacy Act</h3>
+                <ul>
+                    <li><strong>Publicly Available Information:</strong> Exemption under CCPA § 1798.140(o)(2)</li>
+                    <li><strong>Notice Requirement:</strong> Clear privacy policy and data use disclosure</li>
+                    <li><strong>Opt-Out Rights:</strong> Mechanisms for data removal requests</li>
+                    <li><strong>No Sale of Data:</strong> We do not sell personal information</li>
+                </ul>
+            </div>
+
+            <h3>3.4 Other Regulations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Regulation</th>
+                        <th>Jurisdiction</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PIPEDA</td>
+                        <td>Canada</td>
+                        <td>✓ Compliant</td>
+                    </tr>
+                    <tr>
+                        <td>APPI</td>
+                        <td>Japan</td>
+                        <td>✓ Compliant</td>
+                    </tr>
+                    <tr>
+                        <td>PDPA</td>
+                        <td>Singapore</td>
+                        <td>✓ Compliant</td>
+                    </tr>
+                    <tr>
+                        <td>UK DPA 2018</td>
+                        <td>United Kingdom</td>
+                        <td>✓ Compliant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4: Ethical Principles -->
+        <section id="ethical-principles">
+            <h2>4. Ethical Principles</h2>
+
+            <h3>4.1 Transparency</h3>
+            <p>We commit to complete transparency in our operations:</p>
+            <ul>
+                <li>Public documentation of all data sources</li>
+                <li>Clear explanation of collection methodologies</li>
+                <li>Open communication about data use and purposes</li>
+                <li>Regular publication of compliance reports</li>
+                <li>Accessible contact channels for concerns</li>
+            </ul>
+
+            <h3>4.2 Privacy Protection</h3>
+            <div class="compliance-box">
+                <h3>Privacy-First Architecture</h3>
+                <ul>
+                    <li><strong>No PII Collection:</strong> Zero collection of names, emails, addresses, or phone numbers</li>
+                    <li><strong>Anonymization:</strong> All data is aggregated and anonymized before storage</li>
+                    <li><strong>Data Minimization:</strong> We collect only aggregate trends, not individual records</li>
+                    <li><strong>Encryption:</strong> All data encrypted in transit (TLS 1.3) and at rest (AES-256)</li>
+                    <li><strong>Access Controls:</strong> Strict role-based access to data systems</li>
+                </ul>
+            </div>
+
+            <h3>4.3 Respect for Source Platforms</h3>
+            <ul>
+                <li><strong>Rate Limiting:</strong> Never overwhelm source servers with requests</li>
+                <li><strong>Terms of Service:</strong> Full compliance with platform ToS and API terms</li>
+                <li><strong>robots.txt Honor:</strong> Automated respect for crawling directives</li>
+                <li><strong>Attribution:</strong> Proper credit and attribution to data sources</li>
+                <li><strong>Commercial Use:</strong> Clear licensing for all commercial data usage</li>
+            </ul>
+
+            <h3>4.4 Social Responsibility</h3>
+            <p>We recognize our broader responsibilities:</p>
+            <ul>
+                <li>No facilitation of discrimination or bias</li>
+                <li>No contribution to surveillance or tracking</li>
+                <li>No support for harmful applications</li>
+                <li>Commitment to beneficial use cases only</li>
+                <li>Regular ethical review of practices</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Technical Safeguards -->
+        <section id="technical-safeguards">
+            <h2>5. Technical Safeguards</h2>
+
+            <h3>5.1 Automated Compliance Checks</h3>
+            <div class="info-box">
+                Every data point passes through our compliance engine before storage:
+                <ul style="margin-top: 10px;">
+                    <li>✓ Verification of public availability</li>
+                    <li>✓ PII detection and filtering</li>
+                    <li>✓ robots.txt validation</li>
+                    <li>✓ License compatibility check</li>
+                    <li>✓ Rate limit enforcement</li>
+                    <li>✓ Source attribution tagging</li>
+                </ul>
+            </div>
+
+            <h3>5.2 Security Measures</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layer</th>
+                        <th>Protection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Transport</td>
+                        <td>TLS 1.3 encryption for all data in transit</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>AES-256 encryption at rest</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td>Multi-factor authentication + role-based controls</td>
+                    </tr>
+                    <tr>
+                        <td>Network</td>
+                        <td>Firewall rules, intrusion detection, DDoS protection</td>
+                    </tr>
+                    <tr>
+                        <td>Monitoring</td>
+                        <td>24/7 security monitoring and incident response</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>5.3 Data Retention</h3>
+            <ul>
+                <li><strong>Default Retention:</strong> 90 days for free tier, configurable for paid plans</li>
+                <li><strong>Automatic Deletion:</strong> Data automatically purged after retention period</li>
+                <li><strong>Opt-Out Processing:</strong> Immediate removal upon verified request (within 48 hours)</li>
+                <li><strong>Audit Logs:</strong> Compliance logs retained for 7 years (minimal metadata only)</li>
+            </ul>
+        </section>
+
+        <!-- Section 6: Prohibited Practices -->
+        <section id="prohibited-practices">
+            <h2>6. Prohibited Practices</h2>
+
+            <div class="warning-box">
+                <strong>GatiFlow Absolutely Prohibits:</strong>
+                <ul>
+                    <li>❌ Collection of personal identifiable information (PII)</li>
+                    <li>❌ Circumvention of authentication or paywalls</li>
+                    <li>❌ Ignoring robots.txt or Terms of Service</li>
+                    <li>❌ Aggressive scraping that harms source servers</li>
+                    <li>❌ Sale or sharing of raw collected data</li>
+                    <li>❌ Use of data for individual profiling or targeting</li>
+                    <li>❌ Collection from social media private accounts</li>
+                    <li>❌ Scraping of children's data (COPPA compliance)</li>
+                    <li>❌ Use of data for discriminatory purposes</li>
+                    <li>❌ Training AI models on collected data without explicit consent</li>
+                </ul>
+            </div>
+
+            <h3>Enforcement</h3>
+            <p>Any violation of these prohibitions results in:</p>
+            <ol>
+                <li>Immediate suspension of data collection</li>
+                <li>Automatic deletion of affected data</li>
+                <li>Internal investigation and corrective action</li>
+                <li>Notification to affected parties if applicable</li>
+                <li>External audit if breach severity warrants</li>
+            </ol>
+        </section>
+
+        <!-- Section 7: Audit & Transparency -->
+        <section id="audit-transparency">
+            <h2>7. Audit & Transparency</h2>
+
+            <h3>7.1 Third-Party Audits</h3>
+            <p>GatiFlow undergoes regular independent audits:</p>
+            <ul>
+                <li><strong>Annual Security Audit:</strong> Infrastructure and data protection assessment</li>
+                <li><strong>Compliance Certification:</strong> GDPR/LGPD compliance verification</li>
+                <li><strong>Penetration Testing:</strong> Quarterly security vulnerability assessment</li>
+                <li><strong>SOC 2 Type II:</strong> (In progress) Service organization control certification</li>
+            </ul>
+
+            <h3>7.2 Public Reporting</h3>
+            <div class="compliance-box">
+                <h3>Transparency Reports</h3>
+                <p>We publish quarterly transparency reports including:</p>
+                <ul>
+                    <li>Volume of data collected by source</li>
+                    <li>Number of opt-out requests processed</li>
+                    <li>Compliance incidents and resolutions</li>
+                    <li>Changes to data sources or methods</li>
+                    <li>Third-party audit summaries</li>
+                </ul>
+            </div>
+
+            <h3>7.3 Data Subject Rights</h3>
+            <p>Individuals can exercise their rights:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Right</th>
+                        <th>Process</th>
+                        <th>Response Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Access</td>
+                        <td>Request via compliance@gatiflow.com</td>
+                        <td>30 days</td>
+                    </tr>
+                    <tr>
+                        <td>Correction</td>
+                        <td>Submit correction request with evidence</td>
+                        <td>14 days</td>
+                    </tr>
+                    <tr>
+                        <td>Deletion</td>
+                        <td>Verified opt-out request</td>
+                        <td>48 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Object</td>
+                        <td>Explain objection and legal basis</td>
+                        <td>30 days</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>8. Contact & Reporting</h2>
+            <p><strong>Have questions or concerns about our compliance practices?</strong></p>
+            <p>We welcome feedback and take all compliance matters seriously.</p>
+            
+            <div style="margin-top: 30px;">
+                <p><strong>Email:</strong> <a href="mailto:gatiflow@proton.me">gatiflow@proton.me</a></p>
+                <p><strong>Compliance Inquiries:</strong> <a href="mailto:compliance@gatiflow.com">compliance@gatiflow.com</a></p>
+                <p><strong>Data Protection Officer:</strong> <a href="mailto:dpo@gatiflow.com">dpo@gatiflow.com</a></p>
+                <p><strong>Security Issues:</strong> <a href="mailto:security@gatiflow.com">security@gatiflow.com</a></p>
+            </div>
+
+            <div style="margin-top: 25px; padding-top: 25px; border-top: 1px solid var(--border);">
+                <p style="font-size: 0.9em;"><strong>Based in Brazil</strong> • Serving Clients Worldwide</p>
+                <p style="font-size: 0.85em; margin-top: 10px;">All inquiries responded to within 2 business days</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p><a href="index.html">← Back to GatiFlow Home</a></p>
+            <p style="margin-top: 20px;">© 2026 GatiFlow Intelligence Systems | Committed to Ethical Data Sourcing</p>
+            <p style="font-size: 0.85em; margin-top: 10px;">This document is version-controlled and publicly accessible for transparency.</p>
+        </footer>
+    </div>
+</body>
+</html>
