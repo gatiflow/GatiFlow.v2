@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-27T23:54:18.978305+00:00",
+    "last_updated": "2026-01-28T02:19:45.242328+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -28,13 +28,6 @@
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://haveibeenpwned.com/Breach/SoundCloud",
         "published": "Tue, 27 Jan 2026 17:11:39 +0000"
-      },
-      {
-        "title": "Management as AI superpower: Thriving in a world of agentic AI",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.oneusefulthing.org/p/management-as-ai-superpower",
-        "published": "Tue, 27 Jan 2026 17:04:22 +0000"
       },
       {
         "title": "OpenSSL: Stack buffer overflow in CMS AuthEnvelopedData parsing",
@@ -122,9 +115,9 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-01-27",
-    "collection_time_utc": "23:54:24",
-    "total_data_points": 16,
+    "collection_date": "2026-01-28",
+    "collection_time_utc": "02:19:51",
+    "total_data_points": 15,
     "next_update": "Automated via GitHub Actions"
   }
 }
