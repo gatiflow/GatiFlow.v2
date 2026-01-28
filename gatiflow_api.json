@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-28T06:46:32.502322+00:00",
+    "last_updated": "2026-01-28T13:04:52.369516+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,11 +16,18 @@
   "data": {
     "market_trends": [
       {
-        "title": "AISLE’s autonomous analyzer found all CVEs in the January OpenSSL release",
+        "title": "ICE and Palantir: US agents using health data to hunt illegal immigrants",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities",
-        "published": "Wed, 28 Jan 2026 01:38:15 +0000"
+        "url": "https://www.bmj.com/content/392/bmj.s168",
+        "published": "Wed, 28 Jan 2026 12:18:12 +0000"
+      },
+      {
+        "title": "Rust at Scale: An Added Layer of Security for WhatsApp",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/",
+        "published": "Wed, 28 Jan 2026 06:21:07 +0000"
       },
       {
         "title": "AI2: Open Coding Agents",
@@ -35,13 +42,6 @@
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://haveibeenpwned.com/Breach/SoundCloud",
         "published": "Tue, 27 Jan 2026 17:11:39 +0000"
-      },
-      {
-        "title": "OpenSSL: Stack buffer overflow in CMS AuthEnvelopedData parsing",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://openssl-library.org/news/vulnerabilities/#CVE-2025-15467",
-        "published": "Tue, 27 Jan 2026 16:56:23 +0000"
       }
     ],
     "top_candidates": [
@@ -123,7 +123,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-28",
-    "collection_time_utc": "06:46:37",
+    "collection_time_utc": "13:04:58",
     "total_data_points": 16,
     "next_update": "Automated via GitHub Actions"
   }
