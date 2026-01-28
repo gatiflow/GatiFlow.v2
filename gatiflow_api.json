@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-28T13:04:52.369516+00:00",
+    "last_updated": "2026-01-28T18:44:08.948523+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,11 +16,25 @@
   "data": {
     "market_trends": [
       {
-        "title": "ICE and Palantir: US agents using health data to hunt illegal immigrants",
+        "title": "That's Not How Email Works, HSBC",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.bmj.com/content/392/bmj.s168",
-        "published": "Wed, 28 Jan 2026 12:18:12 +0000"
+        "url": "https://danq.me/2026/01/28/hsbc-dont-understand-email/",
+        "published": "Wed, 28 Jan 2026 18:12:02 +0000"
+      },
+      {
+        "title": "Oban, the job processing framework from Elixir, has come to Python",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://www.dimamik.com/posts/oban_py/",
+        "published": "Wed, 28 Jan 2026 16:32:00 +0000"
+      },
+      {
+        "title": "Airfoil (2024)",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://ciechanow.ski/airfoil/",
+        "published": "Wed, 28 Jan 2026 14:32:30 +0000"
       },
       {
         "title": "Rust at Scale: An Added Layer of Security for WhatsApp",
@@ -30,18 +44,11 @@
         "published": "Wed, 28 Jan 2026 06:21:07 +0000"
       },
       {
-        "title": "AI2: Open Coding Agents",
+        "title": "Show HN: Build Web Automations via Demonstration",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://allenai.org/blog/open-coding-agents",
-        "published": "Tue, 27 Jan 2026 17:17:54 +0000"
-      },
-      {
-        "title": "SoundCloud Data Breach Now on HaveIBeenPwned",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://haveibeenpwned.com/Breach/SoundCloud",
-        "published": "Tue, 27 Jan 2026 17:11:39 +0000"
+        "url": "https://www.notte.cc/launch-week-i/demonstrate-mode",
+        "published": "Tue, 27 Jan 2026 13:48:30 +0000"
       }
     ],
     "top_candidates": [
@@ -123,8 +130,8 @@
   },
   "metadata": {
     "collection_date": "2026-01-28",
-    "collection_time_utc": "13:04:58",
-    "total_data_points": 16,
+    "collection_time_utc": "18:44:14",
+    "total_data_points": 17,
     "next_update": "Automated via GitHub Actions"
   }
 }
