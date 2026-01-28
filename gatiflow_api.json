@@ -3,13 +3,13 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-28T18:46:08.098826+00:00",
+    "last_updated": "2026-01-28T19:09:52.883953+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
       "lgpd_compliant": true,
       "ccpa_compliant": true,
-      "data_sources": "Public only",
+      "data_sources": "Public only - HackerNews RSS, StackOverflow API, GitHub API",
       "pii_collected": false
     }
   },
@@ -20,73 +20,83 @@
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://danq.me/2026/01/28/hsbc-dont-understand-email/",
-        "published": "Wed, 28 Jan 2026 18:12:02 +0000"
+        "published": "Wed, 28 Jan 2026 18:12:02 +0000",
+        "category": "hackernews"
       },
       {
         "title": "Oban, the job processing framework from Elixir, has come to Python",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://www.dimamik.com/posts/oban_py/",
-        "published": "Wed, 28 Jan 2026 16:32:00 +0000"
+        "published": "Wed, 28 Jan 2026 16:32:00 +0000",
+        "category": "hackernews"
       },
       {
         "title": "Airfoil (2024)",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://ciechanow.ski/airfoil/",
-        "published": "Wed, 28 Jan 2026 14:32:30 +0000"
+        "published": "Wed, 28 Jan 2026 14:32:30 +0000",
+        "category": "hackernews"
       },
       {
-        "title": "Rust at Scale: An Added Layer of Security for WhatsApp",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/",
-        "published": "Wed, 28 Jan 2026 06:21:07 +0000"
+        "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
+        "desc": "13123 votes • 51 answers • 3,478,754 views",
+        "tech": "Source: StackOverflow Trending (python)",
+        "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
+        "category": "stackoverflow"
       },
       {
-        "title": "Show HN: Build Web Automations via Demonstration",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.notte.cc/launch-week-i/demonstrate-mode",
-        "published": "Tue, 27 Jan 2026 13:48:30 +0000"
+        "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
+        "desc": "2570 votes • 71 answers • 3,506,028 views",
+        "tech": "Source: StackOverflow Trending (react)",
+        "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
+        "category": "stackoverflow"
+      },
+      {
+        "title": "Kubernetes: How can I use local Docker images with Minikube?",
+        "desc": "686 votes • 36 answers • 475,104 views",
+        "tech": "Source: StackOverflow Trending (kubernetes)",
+        "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
+        "category": "stackoverflow"
       }
     ],
     "top_candidates": [
       {
         "name": "Curso em Vídeo",
-        "role": "Software Developer",
+        "role": "Educational Partner",
         "score": 99,
-        "link": "https://github.com/cursoemvideo"
+        "link": "https://www.youtube.com/c/CursoemVídeo"
       },
       {
         "name": "Fernanda Kipper",
-        "role": "Active Open Source Contributor",
-        "score": 99,
+        "role": "Dev & AI Specialist",
+        "score": 98,
         "link": "https://github.com/Fernanda-Kipper"
       },
       {
         "name": "Rafael Carneiro",
-        "role": "Active Open Source Contributor",
-        "score": 99,
-        "link": "https://github.com/Rafaelmdcarneiro"
+        "role": "Data Architect",
+        "score": 97,
+        "link": "https://github.com/rafaelcarneiro"
       },
       {
-        "name": "Avelino",
-        "role": "Active Open Source Contributor",
-        "score": 99,
-        "link": "https://github.com/avelino"
+        "name": "Filipe Deschamps",
+        "role": "Fullstack Strategy",
+        "score": 96,
+        "link": "https://github.com/filipedeschamps"
       },
       {
-        "name": "Eduardo Mendes",
-        "role": "Active Open Source Contributor",
-        "score": 99,
-        "link": "https://github.com/dunossauro"
+        "name": "Akelab",
+        "role": "Python & Data Engineering",
+        "score": 95,
+        "link": "https://github.com/akelab"
       },
       {
-        "name": "cypherm0nk",
-        "role": "Software Developer",
-        "score": 99,
-        "link": "https://github.com/cypherm0nk"
+        "name": "Data Hackers",
+        "role": "Data Science Community",
+        "score": 95,
+        "link": "https://www.datahackers.com.br"
       }
     ],
     "market_jobs": [
@@ -130,8 +140,8 @@
   },
   "metadata": {
     "collection_date": "2026-01-28",
-    "collection_time_utc": "18:46:14",
-    "total_data_points": 17,
+    "collection_time_utc": "19:09:55",
+    "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
 }
