@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-28T19:10:44.045900+00:00",
+    "last_updated": "2026-01-29T02:35:48.925092+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,46 +16,46 @@
   "data": {
     "market_trends": [
       {
-        "title": "That's Not How Email Works, HSBC",
+        "title": "Beautiful Mermaid",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://danq.me/2026/01/28/hsbc-dont-understand-email/",
-        "published": "Wed, 28 Jan 2026 18:12:02 +0000",
+        "url": "https://github.com/lukilabs/beautiful-mermaid",
+        "published": "Thu, 29 Jan 2026 02:08:40 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Oban, the job processing framework from Elixir, has come to Python",
+        "title": "Please Don't Say Mean Things about the AI I Just Invested a Billion Dollars In",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.dimamik.com/posts/oban_py/",
-        "published": "Wed, 28 Jan 2026 16:32:00 +0000",
+        "url": "https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in",
+        "published": "Wed, 28 Jan 2026 23:36:23 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Airfoil (2024)",
+        "title": "The UK paid £4.1M for a bookmarks site",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://ciechanow.ski/airfoil/",
-        "published": "Wed, 28 Jan 2026 14:32:30 +0000",
+        "url": "https://mahadk.com/posts/ai-skills-hub",
+        "published": "Wed, 28 Jan 2026 23:16:12 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,754 views",
+        "desc": "13123 votes • 51 answers • 3,478,779 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,028 views",
+        "desc": "2570 votes • 71 answers • 3,506,080 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,104 views",
+        "desc": "686 votes • 36 answers • 475,113 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -139,8 +139,8 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-01-28",
-    "collection_time_utc": "19:10:46",
+    "collection_date": "2026-01-29",
+    "collection_time_utc": "02:35:51",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
