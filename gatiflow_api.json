@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-29T18:57:23.894936+00:00",
+    "last_updated": "2026-01-29T20:46:59.395862+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,46 +16,46 @@
   "data": {
     "market_trends": [
       {
-        "title": "AI's Impact on Engineering Jobs May Be Different Than Expected",
+        "title": "Taco writer detained–briefly–by feds",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://semiengineering.com/ais-impact-on-engineering-jobs-may-be-different-than-initial-projections/",
-        "published": "Thu, 29 Jan 2026 18:00:10 +0000",
+        "url": "https://bigbendsentinel.com/2026/01/28/taco-writer-detained-briefly-by-feds/",
+        "published": "Thu, 29 Jan 2026 20:20:11 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Launch HN: AgentMail (YC S25) – An API that gives agents their own email inboxes",
+        "title": "Why \"The AI Hallucinated\" is the perfect legal defense",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://news.ycombinator.com/item?id=46812608",
-        "published": "Thu, 29 Jan 2026 16:42:33 +0000",
+        "url": "https://niyikiza.com/posts/hallucination-defense/",
+        "published": "Thu, 29 Jan 2026 19:45:12 +0000",
         "category": "hackernews"
       },
       {
-        "title": "US cybersecurity chief leaked sensitive government files to ChatGPT: Report",
+        "title": "County pays $600k to pentesters it arrested for assessing courthouse security",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.dexerto.com/entertainment/us-cybersecurity-chief-leaked-sensitive-government-files-to-chatgpt-report-3311462/",
-        "published": "Thu, 29 Jan 2026 16:12:19 +0000",
+        "url": "https://arstechnica.com/security/2026/01/county-pays-600000-to-pentesters-it-arrested-for-assessing-courthouse-security/",
+        "published": "Thu, 29 Jan 2026 18:48:09 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,861 views",
+        "desc": "13123 votes • 51 answers • 3,478,867 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,232 views",
+        "desc": "2570 votes • 71 answers • 3,506,246 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,138 views",
+        "desc": "686 votes • 36 answers • 475,140 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -140,7 +140,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-29",
-    "collection_time_utc": "18:57:27",
+    "collection_time_utc": "20:47:02",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
