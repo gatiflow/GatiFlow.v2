@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-29T13:11:54.987764+00:00",
+    "last_updated": "2026-01-29T18:57:23.894936+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,46 +16,46 @@
   "data": {
     "market_trends": [
       {
-        "title": "The tech market is fundamentally fucked up and AI is just a scapegoat",
+        "title": "AI's Impact on Engineering Jobs May Be Different Than Expected",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://bayramovanar.substack.com/p/tech-market-is-fucked-up",
-        "published": "Thu, 29 Jan 2026 12:03:13 +0000",
+        "url": "https://semiengineering.com/ais-impact-on-engineering-jobs-may-be-different-than-initial-projections/",
+        "published": "Thu, 29 Jan 2026 18:00:10 +0000",
         "category": "hackernews"
       },
       {
-        "title": "AI on Australian travel company website sent tourists to nonexistent hot springs",
+        "title": "Launch HN: AgentMail (YC S25) – An API that gives agents their own email inboxes",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.cnn.com/2026/01/28/travel/ai-tourism-nonexistent-hotsprings-intl-scli",
-        "published": "Thu, 29 Jan 2026 10:15:42 +0000",
+        "url": "https://news.ycombinator.com/item?id=46812608",
+        "published": "Thu, 29 Jan 2026 16:42:33 +0000",
         "category": "hackernews"
       },
       {
-        "title": "We can’t send mail farther than 500 miles (2002)",
+        "title": "US cybersecurity chief leaked sensitive government files to ChatGPT: Report",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://web.mit.edu/jemorris/humor/500-miles",
-        "published": "Thu, 29 Jan 2026 03:58:33 +0000",
+        "url": "https://www.dexerto.com/entertainment/us-cybersecurity-chief-leaked-sensitive-government-files-to-chatgpt-report-3311462/",
+        "published": "Thu, 29 Jan 2026 16:12:19 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,827 views",
+        "desc": "13123 votes • 51 answers • 3,478,861 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,164 views",
+        "desc": "2570 votes • 71 answers • 3,506,232 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,123 views",
+        "desc": "686 votes • 36 answers • 475,138 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -140,7 +140,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-29",
-    "collection_time_utc": "13:11:57",
+    "collection_time_utc": "18:57:27",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
