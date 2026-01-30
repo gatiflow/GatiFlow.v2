@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T06:59:00.171531+00:00",
+    "last_updated": "2026-01-30T11:55:24.974012+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,46 +16,46 @@
   "data": {
     "market_trends": [
       {
-        "title": "Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT",
+        "title": "Tesla's Robotaxi data confirms crash rate 3x worse than humans even with monitor",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://openai.com/index/retiring-gpt-4o-and-older-models/",
-        "published": "Thu, 29 Jan 2026 21:02:31 +0000",
+        "url": "https://electrek.co/2026/01/29/teslas-own-robotaxi-data-confirms-crash-rate-3x-worse-than-humans-even-with-monitor/",
+        "published": "Fri, 30 Jan 2026 10:14:31 +0000",
         "category": "hackernews"
       },
       {
-        "title": "The WiFi only works when it's raining (2024)",
+        "title": "How AI Impacts Skill Formation",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://predr.ag/blog/wifi-only-works-when-its-raining/",
-        "published": "Thu, 29 Jan 2026 20:47:36 +0000",
+        "url": "https://arxiv.org/abs/2601.20245",
+        "published": "Fri, 30 Jan 2026 07:06:47 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Launch HN: AgentMail (YC S25) – An API that gives agents their own email inboxes",
+        "title": "Photoroom (YC S20) Is Hiring a Head of Cross-Platform (Rust) in Paris",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://news.ycombinator.com/item?id=46812608",
-        "published": "Thu, 29 Jan 2026 16:42:33 +0000",
+        "url": "https://jobs.ashbyhq.com/photoroom/dc994a7c-e104-46e1-81c3-b88d635398b9",
+        "published": "Fri, 30 Jan 2026 07:00:08 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,890 views",
+        "desc": "13123 votes • 51 answers • 3,478,913 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,290 views",
+        "desc": "2570 votes • 71 answers • 3,506,349 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,148 views",
+        "desc": "686 votes • 36 answers • 475,158 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -140,7 +140,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-30",
-    "collection_time_utc": "06:59:02",
+    "collection_time_utc": "11:55:28",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
