@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-29T20:46:59.395862+00:00",
+    "last_updated": "2026-01-30T02:36:06.462589+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,19 +16,11 @@
   "data": {
     "market_trends": [
       {
-        "title": "Taco writer detained–briefly–by feds",
+        "title": "The WiFi only works when it's raining (2024)",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://bigbendsentinel.com/2026/01/28/taco-writer-detained-briefly-by-feds/",
-        "published": "Thu, 29 Jan 2026 20:20:11 +0000",
-        "category": "hackernews"
-      },
-      {
-        "title": "Why \"The AI Hallucinated\" is the perfect legal defense",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://niyikiza.com/posts/hallucination-defense/",
-        "published": "Thu, 29 Jan 2026 19:45:12 +0000",
+        "url": "https://predr.ag/blog/wifi-only-works-when-its-raining/",
+        "published": "Thu, 29 Jan 2026 20:47:36 +0000",
         "category": "hackernews"
       },
       {
@@ -40,22 +32,30 @@
         "category": "hackernews"
       },
       {
+        "title": "AI's impact on engineering jobs may be different than expected",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://semiengineering.com/ais-impact-on-engineering-jobs-may-be-different-than-initial-projections/",
+        "published": "Thu, 29 Jan 2026 18:00:10 +0000",
+        "category": "hackernews"
+      },
+      {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,867 views",
+        "desc": "13123 votes • 51 answers • 3,478,882 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,246 views",
+        "desc": "2570 votes • 71 answers • 3,506,263 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,140 views",
+        "desc": "686 votes • 36 answers • 475,145 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -139,8 +139,8 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-01-29",
-    "collection_time_utc": "20:47:02",
+    "collection_date": "2026-01-30",
+    "collection_time_utc": "02:36:09",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
