@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T12:08:11.963306+00:00",
+    "last_updated": "2026-01-30T12:14:15.762825+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,19 +16,19 @@
   "data": {
     "market_trends": [
       {
+        "title": "BoldVoice (YC S21) Is Hiring Fullstack and Machine Learning Engineers",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://boldvoice.notion.site/careers-page?p=2e871a9bf729806c81f6e47f32e32622&pm=s",
+        "published": "Fri, 30 Jan 2026 12:00:12 +0000",
+        "category": "hackernews"
+      },
+      {
         "title": "Tesla's Robotaxi data confirms crash rate 3x worse than humans even with monitor",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
         "url": "https://electrek.co/2026/01/29/teslas-own-robotaxi-data-confirms-crash-rate-3x-worse-than-humans-even-with-monitor/",
         "published": "Fri, 30 Jan 2026 10:14:31 +0000",
-        "category": "hackernews"
-      },
-      {
-        "title": "How AI Impacts Skill Formation",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://arxiv.org/abs/2601.20245",
-        "published": "Fri, 30 Jan 2026 07:06:47 +0000",
         "category": "hackernews"
       },
       {
@@ -40,21 +40,21 @@
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,351 views",
+        "desc": "2570 votes • 71 answers • 3,506,352 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
-        "desc": "167 reactions • 126 comments • Tags: ai, webdev, discuss",
+        "desc": "168 reactions • 126 comments • Tags: ai, webdev, discuss",
         "tech": "Source: Dev.to Article by Daniel Nwaneri",
         "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
         "category": "devto"
       },
       {
         "title": "Why We Suddenly Have Developers Who Can't Think in Systems",
-        "desc": "85 reactions • 33 comments • Tags: career, software, learning",
+        "desc": "89 reactions • 33 comments • Tags: career, software, learning",
         "tech": "Source: Dev.to Article by Narnaiezzsshaa Truong",
         "url": "https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-30",
-    "collection_time_utc": "12:08:19",
+    "collection_time_utc": "12:14:22",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
