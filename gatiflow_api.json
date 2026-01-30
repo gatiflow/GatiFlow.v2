@@ -3,13 +3,13 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T11:57:26.062722+00:00",
+    "last_updated": "2026-01-30T12:08:11.963306+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
       "lgpd_compliant": true,
       "ccpa_compliant": true,
-      "data_sources": "Public only - HackerNews RSS, StackOverflow API, GitHub API",
+      "data_sources": "Public only - HackerNews RSS, StackOverflow API, GitHub API, Reddit API, Dev.to API",
       "pii_collected": false
     }
   },
@@ -32,14 +32,6 @@
         "category": "hackernews"
       },
       {
-        "title": "Photoroom (YC S20) Is Hiring a Head of Cross-Platform (Rust) in Paris",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://jobs.ashbyhq.com/photoroom/dc994a7c-e104-46e1-81c3-b88d635398b9",
-        "published": "Fri, 30 Jan 2026 07:00:08 +0000",
-        "category": "hackernews"
-      },
-      {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
         "desc": "13123 votes • 51 answers • 3,478,914 views",
         "tech": "Source: StackOverflow Trending (python)",
@@ -48,17 +40,24 @@
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,349 views",
+        "desc": "2570 votes • 71 answers • 3,506,351 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
-        "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,159 views",
-        "tech": "Source: StackOverflow Trending (kubernetes)",
-        "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
-        "category": "stackoverflow"
+        "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
+        "desc": "167 reactions • 126 comments • Tags: ai, webdev, discuss",
+        "tech": "Source: Dev.to Article by Daniel Nwaneri",
+        "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
+        "category": "devto"
+      },
+      {
+        "title": "Why We Suddenly Have Developers Who Can't Think in Systems",
+        "desc": "85 reactions • 33 comments • Tags: career, software, learning",
+        "tech": "Source: Dev.to Article by Narnaiezzsshaa Truong",
+        "url": "https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj",
+        "category": "devto"
       }
     ],
     "top_candidates": [
@@ -140,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-30",
-    "collection_time_utc": "11:57:28",
+    "collection_time_utc": "12:08:19",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
