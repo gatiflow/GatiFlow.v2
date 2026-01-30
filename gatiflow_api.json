@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T11:55:24.974012+00:00",
+    "last_updated": "2026-01-30T11:57:26.062722+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -41,7 +41,7 @@
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,913 views",
+        "desc": "13123 votes • 51 answers • 3,478,914 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
@@ -55,7 +55,7 @@
       },
       {
         "title": "Kubernetes: How can I use local Docker images with Minikube?",
-        "desc": "686 votes • 36 answers • 475,158 views",
+        "desc": "686 votes • 36 answers • 475,159 views",
         "tech": "Source: StackOverflow Trending (kubernetes)",
         "url": "https://stackoverflow.com/questions/42564058/how-can-i-use-local-docker-images-with-minikube",
         "category": "stackoverflow"
@@ -140,7 +140,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-30",
-    "collection_time_utc": "11:55:28",
+    "collection_time_utc": "11:57:28",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
