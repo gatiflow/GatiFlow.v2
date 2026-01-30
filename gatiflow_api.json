@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T12:14:15.762825+00:00",
+    "last_updated": "2026-01-30T13:10:27.793602+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -33,21 +33,21 @@
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,478,914 views",
+        "desc": "13124 votes • 51 answers • 3,478,916 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,352 views",
+        "desc": "2570 votes • 71 answers • 3,506,364 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
-        "desc": "168 reactions • 126 comments • Tags: ai, webdev, discuss",
+        "desc": "169 reactions • 129 comments • Tags: ai, webdev, discuss",
         "tech": "Source: Dev.to Article by Daniel Nwaneri",
         "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-01-30",
-    "collection_time_utc": "12:14:22",
+    "collection_time_utc": "13:10:34",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
