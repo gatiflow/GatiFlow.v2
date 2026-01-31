@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-01-30T18:54:14.773078+00:00",
+    "last_updated": "2026-01-31T02:31:54.470720+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,45 +16,45 @@
   "data": {
     "market_trends": [
       {
-        "title": "Show HN: Amla Sandbox – WASM bash shell sandbox for AI agents",
+        "title": "Show HN: I trained a 9M speech model to fix my Mandarin tones",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://github.com/amlalabs/amla-sandbox",
-        "published": "Fri, 30 Jan 2026 14:34:32 +0000",
+        "url": "https://simedw.com/2026/01/31/ear-pronunication-via-ctc/",
+        "published": "Sat, 31 Jan 2026 00:51:27 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Wisconsin communities signed secrecy deals for billion-dollar data centers",
+        "title": "175K+ publicly-exposed Ollama AI instances discovered",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.wpr.org/news/4-wisconsin-communities-signed-secrecy-deals-billion-dollar-data-centers",
-        "published": "Fri, 30 Jan 2026 13:23:53 +0000",
+        "url": "https://www.techradar.com/pro/security/over-175-000-publicly-exposed-ollama-ai-servers-discovered-worldwide-so-fix-now",
+        "published": "Sat, 31 Jan 2026 00:12:22 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,478,950 views",
+        "desc": "13124 votes • 51 answers • 3,478,970 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,419 views",
+        "desc": "2570 votes • 71 answers • 3,506,441 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
-        "desc": "181 reactions • 130 comments • Tags: ai, webdev, discuss",
+        "desc": "184 reactions • 131 comments • Tags: ai, webdev, discuss",
         "tech": "Source: Dev.to Article by Daniel Nwaneri",
         "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
         "category": "devto"
       },
       {
         "title": "Is Learning CSS a Waste of Time in 2026?",
-        "desc": "83 reactions • 84 comments • Tags: css, webdev, frontend",
+        "desc": "93 reactions • 90 comments • Tags: css, webdev, frontend",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
         "category": "devto"
@@ -138,8 +138,8 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-01-30",
-    "collection_time_utc": "18:54:21",
+    "collection_date": "2026-01-31",
+    "collection_time_utc": "02:32:00",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
