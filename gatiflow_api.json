@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-02T02:46:39.377933+00:00",
+    "last_updated": "2026-02-02T07:11:10.139668+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,45 +16,45 @@
   "data": {
     "market_trends": [
       {
-        "title": "Show HN: NanoClaw – “Clawdbot” in 500 lines of TS with Apple container isolation",
+        "title": "Leaked Chats Expose the Daily Life of a Scam Compound's Enslaved Workforce",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://github.com/gavrielc/nanoclaw",
-        "published": "Sun, 01 Feb 2026 22:49:22 +0000",
+        "url": "https://www.wired.com/story/the-red-bull-leaks/",
+        "published": "Mon, 02 Feb 2026 05:10:59 +0000",
         "category": "hackernews"
       },
       {
-        "title": "MRI scans show exercise can make the brain look younger",
+        "title": "Building a Telegram Bot with Cloudflare Workers, Durable Objects and Grammy",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.sciencedaily.com/releases/2026/01/260121034130.htm",
-        "published": "Sun, 01 Feb 2026 21:37:00 +0000",
+        "url": "https://flashblaze.xyz/posts/cloudflare-workers-durable-objects-telegram-bot/",
+        "published": "Mon, 02 Feb 2026 03:02:55 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,479,052 views",
+        "desc": "13123 votes • 51 answers • 3,479,065 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,559 views",
+        "desc": "2570 votes • 71 answers • 3,506,586 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
-        "desc": "207 reactions • 152 comments • Tags: ai, webdev, discuss",
+        "desc": "207 reactions • 153 comments • Tags: ai, webdev, discuss",
         "tech": "Source: Dev.to Article by Daniel Nwaneri",
         "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
         "category": "devto"
       },
       {
         "title": "Is Learning CSS a Waste of Time in 2026?",
-        "desc": "125 reactions • 128 comments • Tags: css, webdev, frontend",
+        "desc": "133 reactions • 134 comments • Tags: css, webdev, frontend",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-02",
-    "collection_time_utc": "02:46:45",
+    "collection_time_utc": "07:11:16",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
