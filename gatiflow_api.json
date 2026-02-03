@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-03T02:43:09.583492+00:00",
+    "last_updated": "2026-02-03T07:00:46.961264+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,45 +16,45 @@
   "data": {
     "market_trends": [
       {
-        "title": "Banning lead in gas worked. The proof is in our hair",
+        "title": "Ask HN: Anyone else struggle with how to learn coding in the AI era?",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://attheu.utah.edu/health-medicine/banning-lead-in-gas-worked-the-proof-is-in-our-hair/",
-        "published": "Tue, 03 Feb 2026 01:52:21 +0000",
+        "url": "https://news.ycombinator.com/item?id=46866165",
+        "published": "Tue, 03 Feb 2026 03:39:12 +0000",
         "category": "hackernews"
       },
       {
-        "title": "GitHub discusses giving maintainers control to disable PRs",
+        "title": "How does misalignment scale with model intelligence and task complexity?",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://github.com/orgs/community/discussions/185387",
-        "published": "Tue, 03 Feb 2026 00:30:02 +0000",
+        "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+        "published": "Tue, 03 Feb 2026 00:28:06 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,479,117 views",
+        "desc": "13123 votes • 51 answers • 3,479,124 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,757 views",
+        "desc": "2570 votes • 71 answers • 3,506,790 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Is Learning CSS a Waste of Time in 2026?",
-        "desc": "144 reactions • 162 comments • Tags: css, webdev, frontend",
+        "desc": "149 reactions • 164 comments • Tags: css, webdev, frontend",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
         "category": "devto"
       },
       {
         "title": "The Internet’s Addiction to Being Contrary",
-        "desc": "96 reactions • 97 comments • Tags: discuss, community",
+        "desc": "96 reactions • 98 comments • Tags: discuss, community",
         "tech": "Source: Dev.to Article by Richard Pascoe",
         "url": "https://dev.to/richardpascoe/the-internets-addiction-to-being-contrary-42ni",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-03",
-    "collection_time_utc": "02:43:16",
+    "collection_time_utc": "07:00:53",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
