@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-02T13:15:03.729730+00:00",
+    "last_updated": "2026-02-03T02:43:09.583492+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,47 +16,47 @@
   "data": {
     "market_trends": [
       {
-        "title": "Microsoft is walking back Windows 11's AI overload",
+        "title": "Banning lead in gas worked. The proof is in our hair",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.windowscentral.com/microsoft/windows-11/microsoft-is-reevaluating-its-ai-efforts-on-windows-11-plans-to-reduce-copilot-integrations-and-evolve-recall",
-        "published": "Mon, 02 Feb 2026 11:52:29 +0000",
+        "url": "https://attheu.utah.edu/health-medicine/banning-lead-in-gas-worked-the-proof-is-in-our-hair/",
+        "published": "Tue, 03 Feb 2026 01:52:21 +0000",
         "category": "hackernews"
       },
       {
-        "title": "Leaked Chats Expose the Daily Life of a Scam Compound's Enslaved Workforce",
+        "title": "GitHub discusses giving maintainers control to disable PRs",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.wired.com/story/the-red-bull-leaks/",
-        "published": "Mon, 02 Feb 2026 05:10:59 +0000",
+        "url": "https://github.com/orgs/community/discussions/185387",
+        "published": "Tue, 03 Feb 2026 00:30:02 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13123 votes • 51 answers • 3,479,079 views",
+        "desc": "13123 votes • 51 answers • 3,479,117 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,506,664 views",
+        "desc": "2570 votes • 71 answers • 3,506,757 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
-        "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
-        "desc": "209 reactions • 153 comments • Tags: ai, webdev, discuss",
-        "tech": "Source: Dev.to Article by Daniel Nwaneri",
-        "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
+        "title": "Is Learning CSS a Waste of Time in 2026?",
+        "desc": "144 reactions • 162 comments • Tags: css, webdev, frontend",
+        "tech": "Source: Dev.to Article by Sylwia Laskowska",
+        "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
         "category": "devto"
       },
       {
-        "title": "Is Learning CSS a Waste of Time in 2026?",
-        "desc": "138 reactions • 144 comments • Tags: css, webdev, frontend",
-        "tech": "Source: Dev.to Article by Sylwia Laskowska",
-        "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
+        "title": "The Internet’s Addiction to Being Contrary",
+        "desc": "96 reactions • 97 comments • Tags: discuss, community",
+        "tech": "Source: Dev.to Article by Richard Pascoe",
+        "url": "https://dev.to/richardpascoe/the-internets-addiction-to-being-contrary-42ni",
         "category": "devto"
       }
     ],
@@ -138,8 +138,8 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-02-02",
-    "collection_time_utc": "13:15:15",
+    "collection_date": "2026-02-03",
+    "collection_time_utc": "02:43:16",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
