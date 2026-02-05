@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-05T13:17:01.625486+00:00",
+    "last_updated": "2026-02-05T18:58:37.184985+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,6 +16,14 @@
   "data": {
     "market_trends": [
       {
+        "title": "Maihem (YC W24): hiring sr robotics perception engineer (London, on-site)",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://jobs.ashbyhq.com/maihem/8da3fa8b-5544-45de-a99e-888021519758",
+        "published": "Thu, 05 Feb 2026 17:00:07 +0000",
+        "category": "hackernews"
+      },
+      {
         "title": "Freshpaint (YC S19) Is Hiring a Senior SWE, Data",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
@@ -24,39 +32,31 @@
         "category": "hackernews"
       },
       {
-        "title": "Don't rent the cloud, own instead",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://blog.comma.ai/datacenter/",
-        "published": "Thu, 05 Feb 2026 05:50:01 +0000",
-        "category": "hackernews"
-      },
-      {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,479,371 views",
+        "desc": "13124 votes • 51 answers • 3,479,416 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,507,365 views",
+        "desc": "2570 votes • 71 answers • 3,507,409 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Should Junior Developers Still Learn JavaScript the Hard Way?",
-        "desc": "151 reactions • 131 comments • Tags: programming, webdev, javascript",
+        "desc": "154 reactions • 153 comments • Tags: programming, webdev, javascript",
         "tech": "Source: Dev.to Article by Art light",
         "url": "https://dev.to/art_light/should-junior-developers-still-learn-javascript-the-hard-way-4j0l",
         "category": "devto"
       },
       {
-        "title": "The Internet’s Addiction to Being Contrary",
-        "desc": "105 reactions • 116 comments • Tags: discuss, community",
-        "tech": "Source: Dev.to Article by Richard Pascoe",
-        "url": "https://dev.to/richardpascoe/the-internets-addiction-to-being-contrary-42ni",
+        "title": "Online Community Demise and why DEV is Different (at least a little bit, I hope)",
+        "desc": "60 reactions • 49 comments • Tags: watercooler",
+        "tech": "Source: Dev.to Article by Ingo Steinke, web developer",
+        "url": "https://dev.to/ingosteinke/online-community-demise-and-why-dev-is-different-16km",
         "category": "devto"
       }
     ],
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-05",
-    "collection_time_utc": "13:17:08",
+    "collection_time_utc": "18:58:43",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
