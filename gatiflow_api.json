@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-05T07:08:16.169364+00:00",
+    "last_updated": "2026-02-05T13:17:01.625486+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,6 +16,14 @@
   "data": {
     "market_trends": [
       {
+        "title": "Freshpaint (YC S19) Is Hiring a Senior SWE, Data",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761",
+        "published": "Thu, 05 Feb 2026 12:00:03 +0000",
+        "category": "hackernews"
+      },
+      {
         "title": "Don't rent the cloud, own instead",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
@@ -24,39 +32,31 @@
         "category": "hackernews"
       },
       {
-        "title": "ICE seeks industry input on ad tech location data for investigative use",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.biometricupdate.com/202602/ice-seeks-industry-input-on-ad-tech-location-data-for-investigative-use",
-        "published": "Thu, 05 Feb 2026 05:02:01 +0000",
-        "category": "hackernews"
-      },
-      {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,479,318 views",
+        "desc": "13124 votes • 51 answers • 3,479,371 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,507,285 views",
+        "desc": "2570 votes • 71 answers • 3,507,365 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
-        "title": "Is Learning CSS a Waste of Time in 2026?",
-        "desc": "156 reactions • 190 comments • Tags: css, webdev, frontend",
-        "tech": "Source: Dev.to Article by Sylwia Laskowska",
-        "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
+        "title": "Should Junior Developers Still Learn JavaScript the Hard Way?",
+        "desc": "151 reactions • 131 comments • Tags: programming, webdev, javascript",
+        "tech": "Source: Dev.to Article by Art light",
+        "url": "https://dev.to/art_light/should-junior-developers-still-learn-javascript-the-hard-way-4j0l",
         "category": "devto"
       },
       {
-        "title": "Should Junior Developers Still Learn JavaScript the Hard Way?",
-        "desc": "147 reactions • 122 comments • Tags: programming, webdev, javascript",
-        "tech": "Source: Dev.to Article by Art light",
-        "url": "https://dev.to/art_light/should-junior-developers-still-learn-javascript-the-hard-way-4j0l",
+        "title": "The Internet’s Addiction to Being Contrary",
+        "desc": "105 reactions • 116 comments • Tags: discuss, community",
+        "tech": "Source: Dev.to Article by Richard Pascoe",
+        "url": "https://dev.to/richardpascoe/the-internets-addiction-to-being-contrary-42ni",
         "category": "devto"
       }
     ],
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-05",
-    "collection_time_utc": "07:08:21",
+    "collection_time_utc": "13:17:08",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
