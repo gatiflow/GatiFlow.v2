@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-06T13:14:32.688174+00:00",
+    "last_updated": "2026-02-06T19:00:11.971775+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,45 +16,45 @@
   "data": {
     "market_trends": [
       {
-        "title": "Show HN: Agent Arena – Test How Manipulation-Proof Your AI Agent Is",
+        "title": "Show HN: Daily-updated database of malicious browser extensions",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://wiz.jock.pl/experiments/agent-arena/",
-        "published": "Fri, 06 Feb 2026 12:12:18 +0000",
+        "url": "https://github.com/toborrm9/malicious_extension_sentry",
+        "published": "Fri, 06 Feb 2026 16:34:39 +0000",
         "category": "hackernews"
       },
       {
-        "title": "A new bill in New York would require disclaimers on AI-generated news content",
+        "title": "Microsoft open-sources LiteBox, a security-focused library OS",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.niemanlab.org/2026/02/a-new-bill-in-new-york-would-require-disclaimers-on-ai-generated-news-content/",
-        "published": "Fri, 06 Feb 2026 09:56:55 +0000",
+        "url": "https://github.com/microsoft/litebox",
+        "published": "Fri, 06 Feb 2026 15:13:04 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,479,482 views",
+        "desc": "13124 votes • 51 answers • 3,479,520 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,507,518 views",
+        "desc": "2570 votes • 71 answers • 3,507,581 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Stop Installing Libraries: 10 Browser APIs That Already Solve Your Problems",
-        "desc": "129 reactions • 58 comments • Tags: webdev, frontend, javascript",
+        "desc": "141 reactions • 59 comments • Tags: webdev, frontend, javascript",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/stop-installing-libraries-10-browser-apis-that-already-solve-your-problems-35bi",
         "category": "devto"
       },
       {
         "title": "Should Junior Developers Still Learn JavaScript the Hard Way?",
-        "desc": "162 reactions • 167 comments • Tags: programming, webdev, javascript",
+        "desc": "163 reactions • 167 comments • Tags: programming, webdev, javascript",
         "tech": "Source: Dev.to Article by Art light",
         "url": "https://dev.to/art_light/should-junior-developers-still-learn-javascript-the-hard-way-4j0l",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-06",
-    "collection_time_utc": "13:14:38",
+    "collection_time_utc": "19:00:23",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
