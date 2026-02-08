@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-07T18:45:49.729377+00:00",
+    "last_updated": "2026-02-08T03:18:37.021255+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,45 +16,45 @@
   "data": {
     "market_trends": [
       {
-        "title": "Al Lowe on model trains, funny deaths and working with Disney",
+        "title": "Show HN: LocalGPT – A local-first AI assistant in Rust with persistent memory",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://spillhistorie.no/2026/02/06/interview-with-sierra-veteran-al-lowe/",
-        "published": "Sat, 07 Feb 2026 15:52:42 +0000",
+        "url": "https://github.com/localgpt-app/localgpt",
+        "published": "Sun, 08 Feb 2026 01:26:38 +0000",
         "category": "hackernews"
       },
       {
-        "title": "The AI boom is causing shortages everywhere else",
+        "title": "FDA intends to take action against non-FDA-approved GLP-1 drugs",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.washingtonpost.com/technology/2026/02/07/ai-spending-economy-shortages/",
-        "published": "Sat, 07 Feb 2026 11:21:29 +0000",
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs",
+        "published": "Sat, 07 Feb 2026 22:25:03 +0000",
         "category": "hackernews"
       },
       {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,479,573 views",
+        "desc": "13124 votes • 51 answers • 3,479,596 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,507,629 views",
+        "desc": "2570 votes • 71 answers • 3,507,640 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Stop Installing Libraries: 10 Browser APIs That Already Solve Your Problems",
-        "desc": "171 reactions • 66 comments • Tags: webdev, frontend, javascript",
+        "desc": "179 reactions • 68 comments • Tags: webdev, frontend, javascript",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/stop-installing-libraries-10-browser-apis-that-already-solve-your-problems-35bi",
         "category": "devto"
       },
       {
         "title": "Should Junior Developers Still Learn JavaScript the Hard Way?",
-        "desc": "166 reactions • 169 comments • Tags: programming, webdev, javascript",
+        "desc": "168 reactions • 169 comments • Tags: programming, webdev, javascript",
         "tech": "Source: Dev.to Article by Art light",
         "url": "https://dev.to/art_light/should-junior-developers-still-learn-javascript-the-hard-way-4j0l",
         "category": "devto"
@@ -138,8 +138,8 @@
     ]
   },
   "metadata": {
-    "collection_date": "2026-02-07",
-    "collection_time_utc": "18:45:57",
+    "collection_date": "2026-02-08",
+    "collection_time_utc": "03:18:47",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
