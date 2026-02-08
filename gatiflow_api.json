@@ -3,7 +3,7 @@
     "name": "GatiFlow Data Intelligence API",
     "version": "2.0.0",
     "status": "production",
-    "last_updated": "2026-02-08T03:18:37.021255+00:00",
+    "last_updated": "2026-02-08T06:59:23.024674+00:00",
     "provider": "GatiFlow Intelligence Systems",
     "compliance": {
       "gdpr_compliant": true,
@@ -16,6 +16,14 @@
   "data": {
     "market_trends": [
       {
+        "title": "Why there is no official statement from Substack about the data leak",
+        "desc": "Strategic insight extracted from global tech flows.",
+        "tech": "Source: Verified Tech Feed (HackerNews)",
+        "url": "https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/",
+        "published": "Sun, 08 Feb 2026 04:34:50 +0000",
+        "category": "hackernews"
+      },
+      {
         "title": "Show HN: LocalGPT – A local-first AI assistant in Rust with persistent memory",
         "desc": "Strategic insight extracted from global tech flows.",
         "tech": "Source: Verified Tech Feed (HackerNews)",
@@ -24,30 +32,22 @@
         "category": "hackernews"
       },
       {
-        "title": "FDA intends to take action against non-FDA-approved GLP-1 drugs",
-        "desc": "Strategic insight extracted from global tech flows.",
-        "tech": "Source: Verified Tech Feed (HackerNews)",
-        "url": "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs",
-        "published": "Sat, 07 Feb 2026 22:25:03 +0000",
-        "category": "hackernews"
-      },
-      {
         "title": "Python: What does the &quot;yield&quot; keyword do in Python?",
-        "desc": "13124 votes • 51 answers • 3,479,596 views",
+        "desc": "13124 votes • 51 answers • 3,479,598 views",
         "tech": "Source: StackOverflow Trending (python)",
         "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python",
         "category": "stackoverflow"
       },
       {
         "title": "React: Error message &quot;error:0308010C:digital envelope routines::unsupported&quot;",
-        "desc": "2570 votes • 71 answers • 3,507,640 views",
+        "desc": "2570 votes • 71 answers • 3,507,643 views",
         "tech": "Source: StackOverflow Trending (react)",
         "url": "https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported",
         "category": "stackoverflow"
       },
       {
         "title": "Stop Installing Libraries: 10 Browser APIs That Already Solve Your Problems",
-        "desc": "179 reactions • 68 comments • Tags: webdev, frontend, javascript",
+        "desc": "182 reactions • 68 comments • Tags: webdev, frontend, javascript",
         "tech": "Source: Dev.to Article by Sylwia Laskowska",
         "url": "https://dev.to/sylwia-lask/stop-installing-libraries-10-browser-apis-that-already-solve-your-problems-35bi",
         "category": "devto"
@@ -139,7 +139,7 @@
   },
   "metadata": {
     "collection_date": "2026-02-08",
-    "collection_time_utc": "03:18:47",
+    "collection_time_utc": "06:59:29",
     "total_data_points": 18,
     "next_update": "Automated via GitHub Actions"
   }
